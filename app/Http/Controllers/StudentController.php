@@ -46,6 +46,22 @@ class StudentController extends Controller
             'students' => $students
         ]);
     }
+    
+    function delete($id)
+    {
+        $isDelete=student::destroy($id);
+        if($isDelete);
+        return redirect('list');
+    }
+
+    function edit($id)
+    {
+        $student= student::find($id);
+        return $student;
+
+    }
+
+
 
     // /**
     //  * Store a newly created resource in storage.
@@ -87,3 +103,4 @@ class StudentController extends Controller
     //     //
     // }
 }
+
