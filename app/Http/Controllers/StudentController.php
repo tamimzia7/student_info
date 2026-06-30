@@ -57,7 +57,7 @@ class StudentController extends Controller
     function edit($id)
     {
         $student= student::find($id);
-        return $student;
+        return view('edit',['data'=>$student]);
 
     }
 

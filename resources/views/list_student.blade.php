@@ -17,6 +17,8 @@
     <td>{{ $student->create_date }}</td>
     <td><a href="{{ 'delete/'.$student->id }}">delete</a>
         <a href="{{ 'edit/'.$student->id }}">edit</a>
+        
+        
     
     </td>
     
